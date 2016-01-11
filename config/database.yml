@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: recipe_organizer_production
-  username: wreddit
+  username: recipe_organizer
   password: <%= ENV['RECIPE_ORGANIZER_DATABASE_PASSWORD'] %>
