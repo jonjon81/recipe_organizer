@@ -4,8 +4,8 @@
       = image_tag @recipe.image.url(:medium), class: "recipe_image"
     .col-md-8
       #recipe_info
-        %h1= @recipe.title
-        %p.description= @recipe.description
+        %h1= @recipe.title.capitalize
+        %p.description= @recipe.description.capitalize
         %p
           Submitted by
           = @recipe.user.email
