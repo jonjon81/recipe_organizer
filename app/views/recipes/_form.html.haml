@@ -17,7 +17,7 @@
         %h3 Ingredients
         #ingredients
           = f.simple_fields_for :items do |ingredient|
-            = render 'item_fields', f: ingredient
+            = render 'ingredient_fields', f: ingredient
           .links
             = link_to_add_association 'Add Ingredient', f, :items, class: "btn btn-default add-button"
 

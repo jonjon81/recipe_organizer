@@ -1,6 +1,7 @@
 class Recipe < ActiveRecord::Base
   has_many :items
   has_many :directions
+  belongs_to :users
 
   accepts_nested_attributes_for :items,
                                 reject_if: proc { |attributes| attributes['name'].blank? },
